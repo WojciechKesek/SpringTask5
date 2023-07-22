@@ -14,7 +14,7 @@ public class WelcomeMessageLogger {
 
     private final Boolean shouldLog;
 
-    public WelcomeMessageLogger(@Value("#{${pl.sdacademy.welcome.text.value:none}}") String text,
+    public WelcomeMessageLogger(@Value("#{${pl.sdacademy.welcome.text.value:'none'}}") String text,
                                 @Value("#{${pl.sdacademy.welcome.text.enable}}") Boolean shouldLog) {
         this.text = text;
         this.shouldLog = shouldLog;
